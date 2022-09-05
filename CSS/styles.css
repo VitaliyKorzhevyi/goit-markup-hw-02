@@ -184,6 +184,7 @@ background-color: var(--secondary-bg-color);
     line-height: 26px;
     text-align: center;  
     border: none;  
+    cursor: pointer;
 }
 
 .filter-btn:hover,
