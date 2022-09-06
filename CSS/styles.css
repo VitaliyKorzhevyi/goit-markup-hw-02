@@ -4,9 +4,16 @@
   --tertiary-text-color: #FFFFFF;
   --accent-text-color: #2196F3;
   --footer-text-color: rgba(255, 255, 255, 0.6);
+
   --primary-bg-color: #FFFFFF;
   --secondary-bg-color: #2F303A;
-  --section-bg-color: #F5F4FA;;
+  --section-bg-color: #F5F4FA;
+
+  --primary-bg-btn: #2196F3;
+  --secondary-bg-btn: #188CE8;
+
+  --primary-bg-btnfilter: #F5F4FA;
+  --secondary-bg-btnfilter: #2196F3;
 }
 
 body {
@@ -102,13 +109,22 @@ background-color: var(--secondary-bg-color);
 }
  .banner-btn {
     color: var(--tertiary-text-color);
+    background-color: var(--primary-bg-btn) ;
+
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
-    text-align: center;
     letter-spacing: 0.06em;
+
     cursor: pointer;
 }
+
+.banner-btn:hover,
+.banner-btn:focus {
+    background-color: var(--secondary-bg-btn);
+}
+
 
  /* Секція з описом */
 .title-descr {
@@ -179,18 +195,21 @@ background-color: var(--secondary-bg-color);
 
 .filter-btn {
     color: var(--secondary-text-color);
+    background-color: var(--primary-bg-btnfilter);
+
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
-    line-height: 26px;
-    text-align: center;  
-    border: none;  
+    line-height: 1.63; 
+    letter-spacing: 0.03em;
+
     cursor: pointer;
 }
 
 .filter-btn:hover,
-.filter-btn:focus,
-.filter-btn:active {
-    color: var(--tertiary-text-color);
+.filter-btn:focus {
+    color: var(--primary-bg-color);
+    background-color: var(--secondary-bg-btnfilter);
 }
 
   /* Контент сторінки */
